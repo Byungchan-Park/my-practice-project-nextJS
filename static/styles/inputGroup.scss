@@ -1,0 +1,105 @@
+// login.js
+.inputGroup {
+  position: relative;
+  margin-bottom: 1rem;
+
+  .login {
+    width: 85%;
+    margin-left: 30px;
+    padding: 10px 10px;
+    letter-spacing: 2px;
+    border-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid $mainColor;
+    outline: none;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    color: inherit;
+    &:focus,
+    &:valid {
+      background: white;
+      & + label {
+        opacity: 0;
+      }
+    }
+  }
+  .loginLabel {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    pointer-events: none;
+  }
+}
+
+// signup.js
+main {
+  // positioning context
+  .field {
+    position: relative;
+    margin-bottom: 15px;
+
+    .inputTitle {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .signup-input {
+      width: 100%;
+      padding: 10px 40px;
+      letter-spacing: 2px;
+      border-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid $mainColor;
+      outline: none;
+      background-color: #f6f6f6;
+      border-radius: 5px;
+      color: inherit;
+
+      &:focus {
+        background: white;
+        & + label {
+          opacity: 0;
+        }
+      }
+
+      &:valid {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEX///9Mr1BHrUtUslj5/Pk5qT7d7t02qDvY69lAq0V+woG83r2u16+43Lmz2rS227eBw4TL5cwppTCLyI55wHx1vner1qyXzZkJD3DQAAACGklEQVR4nO3W6U4CQRRE4WkUcMAVt/d/U1FRWWbvRm5VzvlLQvpLXQ1VRURERERERERERERERERERERERERERESU39OlH3Du1pvVpZ9w3tbLVFsTt8BkTfwCOhN3QF/iL9CVuAf0JB4AHYlHQD/iCdCN2AD0IjYCnYgtwJTmz5d+WplagbOr60u/rUgA1bMH3rkDWVA9eyAnqp49kBNVD6B69sAHdyALqmcP5ETVs18QoHr2f4MA1QOoHkD1AKoHUD174L07kAXVA6geQPUA/n+Lot8WEPi4uSn4bRGBdVqWI8YEpnLEqMCU5mWIAYGreveEIitGBhYh3oYGFjjUgAu+1AcPyVwxPjCTqADMOtSAwNdTYMaKKsDJxID/RVuAEw814ILVYt7ypikrBlywKkqMCewijjzUqMBiK8YFFiJGBhY51NjAAitGB2YT4wMzD1UBmLWiBjCDqAKcfKg6wIkrKgEnEbWAEw5VDTh6RT3gSKIicNShagJHrPgmChxM1AUOPFRl4KAVtYEDiOrA3kPVB/as6ADsItbvbR9JAbuIMw9gF9EEOJYoCBxHlASOIYoChxNlgUOJwsBhRGngEKI4sJ8oD+wjGgC7iRbAzt+oHsB2og2wjWgEbCZaAZuIZsBToh3wmGgIPCRaAveJpsA/oi3wh2gM/CZaAz+J5sAtMZkDiYiIiIiIiIiIiIiIiIiIiIiIiIiM+wACwyBU5QAelgAAAABJRU5ErkJggg==");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+
+        & + label {
+          opacity: 0;
+        }
+      }
+    }
+
+    .gender__male {
+      margin-right: 1rem;
+    }
+  }
+
+  // Looks like placeholder
+  label {
+    opacity: 0.3;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+  }
+}
+
+footer {
+  margin-top: 1rem;
+  .field {
+    margin-bottom: 1rem;
+    input {
+      margin-right: 1rem;
+    }
+    label {
+      font-size: 0.8rem;
+    }
+  }
+}

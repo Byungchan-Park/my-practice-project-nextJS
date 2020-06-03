@@ -1,0 +1,25 @@
+.btnGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.btn {
+  display: block;
+  outline: none;
+  background-color: $backgroundColor;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  @include borderIt(0, 5px);
+  cursor: pointer;
+  color: #fff;
+}
+
+.signup-btn {
+  &:hover {
+    background-color: green;
+  }
+}

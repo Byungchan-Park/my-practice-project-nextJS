@@ -1,0 +1,16 @@
+$backgroundColor: #a8bfba;
+$mainColor: #748c86;
+$white: #fff;
+$num1: 6px;
+$num2: 10px;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin borderIt($num1, $num2) {
+    border: $num1 solid $mainColor;
+    border-radius: $num2;
+}
